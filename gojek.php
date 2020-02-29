@@ -7,11 +7,11 @@ if (!file_exists('token')) {
 
 include ("curl.php");
 echo "\n";
-echo "\e[94m          Vc Gojek           \y";
+echo "\e[94m          Voucher Claim Gojek           \n";
 echo "\e[91m FORMAT NOMOR HP : INDONESIA '62***' , US='1***'\n";
-echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM Vouc \y";
-echo "\e[93m SCRIPT :fed85.com\y";
-echo "\e[93m Github: fed85 \y";
+echo "\e[93m SCRIPT GOJEK AUTO REGISTER + AUTO CLAIM VOUCHER\n";
+echo "\e[93m SCRIPT : dimasukaforex.com\n";
+echo "\e[93m Github: dimasuka84 \n";
 echo "\n";
 echo "\e[96m[?] Masukkan Nomor HP Anda (62/1) : ";
 $nope = trim(fgets(STDIN));
@@ -48,14 +48,14 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\y";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A \y";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
                 sleep(3);
-                goto ride;
+                goto next;
             }
             next:
             $claim = claim1($verif);
             if ($claim == true) {
-                echo "\e[92m[!]".$claim['errors'][0]['message']."\y";
+                echo "\e[92m[!]".$claim['true'][1]['message']."\y";
                 sleep(3);
                 echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
                 sleep(3);
@@ -66,22 +66,22 @@ if ($register == false)
                 sleep(3);
                 echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
                 sleep(3);
-                goto ride;
+                goto next1;
             }
             next1:
             $claim = claim2($verif);
             if ($claim == true) {
-                echo "\e[92m[!]".$claim['errors'][0]['message']."\y";
+                echo "\e[92m[!]".$claim['true'][1]['message']."y";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher :GOFOOD022620A \y";
+                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
                 sleep(3);
                 goto ride;
             }
           else
             {
-            echo "\e[92m[+] ".$claim . "\y";
+            echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : COBAGOCAR !\y";
+            echo "\e[93m[!] redeem Voucher : GOFOOD022620A !\y";
             sleep(3);
             goto ride;
             }
@@ -90,12 +90,12 @@ if ($register == false)
             if ($claim == true ) {
                 echo "\e[92m[!]".$claim['true'][1]['message']."\y";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
+                echo "\e[93m[!] Trying to redeem Voucher : COBAGORIDE !\y";
                 sleep(3);
 
             }
             else{
-                echo "\e[92m[+] ".$claim."\y";
+                echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
                 echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
                 sleep(3);
@@ -104,10 +104,10 @@ if ($register == false)
             pengen:
             $claim = cekvocer($verif);
             if ($claim == true ) {
-                echo "\033VOUCHER VALID/success REDEEM\y";
+                echo "\033 VOUCHER VALID/BERHASIL REDEEM\n";
             }
             else{
-                echo "\e[92m[+] ".$claim."\y";
+                echo "\e[92m[+] ".$claim."\n";
                 
         }
     }
