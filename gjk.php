@@ -32,14 +32,14 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Trying to redeem Voucher : GOFOOD021120A !\n";
+        echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\n";
         sleep(3);
         $claim = claim($verif);
         if ($claim == false)
             {
             echo "\e[92m[!]".$voucher."\n";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : GOFOOD021120B !\n";
+            echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\n";
             sleep(3);
             goto pengen;
             }
@@ -53,7 +53,6 @@ if ($register == false)
                 
         }
     }
-    }
-
+}
 
 ?>
