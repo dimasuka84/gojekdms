@@ -47,8 +47,8 @@ if ($register == false)
             }
             else{
                 echo "\e[92m[+] ".$claim."\y";
-                sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
+              
+                
                 sleep(3);
                 goto next;
             }
@@ -57,14 +57,13 @@ if ($register == false)
             if ($claim == true) {
                 echo "\e[92m[!]".$claim['true'][1]['message']."\y";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
-                sleep(3);
+     
+              
                 goto next1;
             }
             else{
                 echo "\e[92m[+] ".$claim."\y";
-                sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
+     
                 sleep(3);
                 goto next1;
             }
@@ -72,8 +71,7 @@ if ($register == false)
             $claim = claim2($verif);
             if ($claim == true) {
                 echo "\e[92m[!]".$claim['true'][1]['message']."y";
-                sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
+     
                 sleep(3);
                 goto ride;
             }
