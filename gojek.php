@@ -81,7 +81,7 @@ if ($register == false)
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] redeem Voucher : GOFOOD022620A !\y";
+            echo "\e[93m[!] redeem Voucher : COBAGOCAR!\y";
             sleep(3);
             goto ride;
             }
@@ -97,8 +97,7 @@ if ($register == false)
             else{
                 echo "\e[92m[+] ".$claim."\n";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
-                sleep(3);
+    
                 goto pengen;
             }
             pengen:
