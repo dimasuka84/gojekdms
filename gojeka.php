@@ -41,7 +41,7 @@ if ($register == false)
             {
             echo "\e[92m[!]".$voucher."\y";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
+            echo "\e[93m[!] Trying to redeem Voucher : G-G3S8BKX !\y";
             sleep(3);
             goto next;
             }
