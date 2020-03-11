@@ -34,14 +34,14 @@ if ($register == false)
       else
         {
         file_put_contents("token/".$verif['data']['customer']['name'].".txt", $verif['data']['access_token']);
-        echo "\e[93m[!] Trying to redeem Voucher : GOFOOD022620A !\y";
+        echo "\e[93m[!] Trying to redeem Voucher : COBAGOFOOD090320A !\y";
         sleep(3);
         $claim = claim($verif);
         if ($claim == true)
             {
             echo "\e[92m[!]".$voucher."\y";
             sleep(3);
-            echo "\e[93m[!] Trying to redeem Voucher : G-G3S8BKX !\y";
+            echo "\e[93m[!] Trying to redeem Voucher : COBAGOFOOD090320A !\y";
             sleep(3);
             goto next;
             }
@@ -79,7 +79,7 @@ if ($register == false)
             {
             echo "\e[92m[+] ".$claim . "\n";
             sleep(3);
-            echo "\e[93m[!] redeem Voucher : COBAGOCAR!\y";
+            echo "\e[93m[!] redeem Voucher : COBAGORIDE!\y";
             sleep(3);
             goto ride;
             }
@@ -88,7 +88,7 @@ if ($register == false)
             if ($claim == true ) {
                 echo "\e[92m[!]".$claim['true'][1]['message']."\y";
                 sleep(3);
-                echo "\e[93m[!] Trying to redeem Voucher : COBAGORIDE !\y";
+                echo "\e[93m[!] Trying to redeem Voucher : COBAGOCAR !\y";
                 sleep(3);
 
             }
